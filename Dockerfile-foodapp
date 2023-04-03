@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-MAINTAINER saikrishna.ura@gmail.com
+MAINTAINER tellago
 
 COPY ./food-app /usr/local/tomcat/webapps/
 
