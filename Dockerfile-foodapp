@@ -1,6 +1,6 @@
 FROM tomcat:8.0
 
-MAINTAINER tellago
+MAINTAINER tellago.ura
 
 COPY ./food-app /usr/local/tomcat/webapps/
 
