@@ -8,12 +8,12 @@ pipeline {
         }
         stage('docker build') {
             steps {
-                sh "docker build -f Dockerfile-foodapp -t foodapp:v1 ."
+                sh "docker build  -t foodapp:v1 ."
             }
         }
         stage('creating docker container') {
             steps {
-                sh "docker run -dt -p 8085:8080 foodapp:v1"
+                sh "docker run -dt -p 8082:8080 foodapp:v1"
             }
         }
         stage('Login to dockerhub') {
